@@ -1,0 +1,27 @@
+.nav{
+    background-color:white;
+    display:grid;
+    
+}
+
+.logo{
+    padding-left:220px;
+    padding-right:1503px;
+    padding-top:20.62px;
+    padding-bottom:20.62px;
+}
+
+
+.delivery{
+    padding-left:640px;
+    padding-right:715px;
+    padding-top:26.5px;
+    padding-bottom:26.5px;
+}
+       
+.search_login{
+    padding-left:1428px;
+    padding-right:220px;
+    padding-top:16px;
+    padding-bottom:20px;
+}

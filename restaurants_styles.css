@@ -1,0 +1,165 @@
+body {
+    margin:0;
+    padding:0;
+}
+
+.featured-restaurants{
+    margin:80px;
+}
+
+.fr-heading{
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(33, 33, 33, 1);
+    margin-bottom:60px;
+}
+
+.upper-res, .lower-res{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom:60px;
+}
+
+.restaurant-card{
+    border-radius: 16px;
+}
+
+.image-container {
+    position: relative;
+  
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+   
+    border-radius: 16px;
+}
+
+.badge-container{
+    position:absolute;
+    top:24px;
+    left:24px;
+    display:flex;
+    gap:8px;
+}
+
+
+
+.badge-discount { 
+    display:flex;
+    align-items: center;
+    background-color:rgba(241, 114, 40, 1);
+    border-radius:8px;
+    padding:8px 16px;
+        color: white;
+            font-weight: 700;
+    font-size: 18px;
+    border: none;
+
+
+}
+
+.badge-fast { 
+     display:flex;
+    align-items: center;
+    background-color: rgba(255, 179, 14, 1);
+     border-radius:8px;
+    padding:8px 16px;
+        color: white;
+            font-weight: 700;
+    font-size: 18px;
+    border: none;
+
+
+}
+
+
+.badge-icon {
+    width: 18px;  
+    margin-right: 10px; 
+}
+
+
+.details{
+    margin-top:24px;
+}
+
+
+.info{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    margin-bottom:30px;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+    border-radius:8px;
+}
+
+
+span{
+    color:rgba(255, 179, 14, 1);
+}
+
+.name{
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    color:rgba(66, 66, 66, 1);
+}
+
+.rating{
+    font-size:16px;
+    padding:4px 50px 0px 0px;
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+
+.status-closed {
+    background-color:rgba(241, 114, 40, 0.2);
+    color:rgba(241, 114, 40, 1);
+     border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.status-open {
+    background-color:rgba(121, 185, 60, 0.2);
+    color:rgba(121, 185, 60, 1);
+     border: none;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.btn-center{
+     display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn{
+   
+   background: linear-gradient(97.86deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+    color: white;
+    border: none;
+    padding: 21px 48px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+   box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29);
+
+
+
+}
+

@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main-footer {
+    background-color: rgba(33, 33, 33, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 80px 0 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 20px 150px;
+}
+
+.link_newsletter {
+    display: flex;
+    justify-content: space-between;
+    padding: 63px 0;
+    border-top: 2px solid #424242; 
+
+   
+}
+
+.links {
+    display: flex;
+    gap: 100px;
+}
+
+.columns h4 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.columns ul {
+    list-style: none;
+    padding-left:0;
+    padding-right: 20px;
+}
+
+.columns ul li {
+    margin-bottom:16px;
+    
+}
+
+.columns ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:400px;
+    color:rgba(245, 245, 245, 1);
+}
+
+
+
+.newsletter {
+    width: 400px;
+}
+
+.social h4 {
+    font-size: 18px;
+    font-weight: 700px;
+    color: rgba(245, 245, 245, 1);
+    margin-bottom: 40px;
+}
+
+.social_media {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 43px;
+}
+
+.social_media img {
+    width: 24px;
+
+}
+
+.mail h4 {
+    font-size: 18px;
+    font-weight: 700px;
+    color:rgba(187, 187, 187, 1);
+    margin-bottom: 40px;
+}
+
+
+.subscribe {
+    display: flex;
+    gap: 16px;
+  
+}
+
+.field {
+    background: rgba(66, 66, 66, 1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 7px 0px 8px 16px;
+}
+
+.envelope_img {
+    width: 24px;
+    margin-right: 10px;
+
+}
+
+
+
+.email_text input {
+    background: rgba(66, 66, 66, 1);
+    border: none;
+    color: white;
+    width: 250px;
+    font-size: 18px;
+}
+
+
+.btn {
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 700;
+
+}
+
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 20px;
+    font-size: 13px;
+    color: rgba(245, 245, 245, 1);
+    border-top: 2px solid #424242; 
+}
+
+.last {
+    display: flex;
+    gap: 5px; 
+}
+
+.lighter {
+    font-weight: 400; 
+}
+
+.heavier {
+    font-weight: 700; 
+}

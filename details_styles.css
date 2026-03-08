@@ -1,0 +1,81 @@
+
+
+.details {
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px; 
+}
+
+.sandwich, .chicken, .pizza {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 16px;
+    height:400px;
+    box-shadow: 0px 27px 82px 0px rgba(124, 124, 124, 0.28);
+}
+
+
+.chicken {
+    flex-direction: row-reverse;
+}
+
+
+.sandwich_text, .chicken_text, .pizza_text {
+    padding: 80px 60px 80px 60px;
+}
+
+.top_text h1{
+    font-size: 43px;
+    font-weight: 700;
+}
+.black{
+     color: rgba(53, 53, 53, 1);
+}
+.yellow{
+     color: rgba(255, 179, 14, 1);
+}
+
+
+
+.bottom_text h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(97, 97, 97, 0.69);
+
+}
+
+button{
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    color: white;
+    border: none;
+    padding: 21px 80px;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 15px;
+    margin-bottom:50px;
+    margin-top:40px;
+    width:400px;
+}
+
+
+.sandwich_image, .chicken_image, .pizza_image{
+    display: flex;
+}
+
+.sandwich_image img,.pizza_image img{
+    width: 600px;
+    height: 400px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.chicken_image img{
+    width: 600px;
+    height: 400px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+ }

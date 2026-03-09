@@ -1,102 +1,774 @@
-body{
-    margin:0;
-    padding:0;
+*{
+  margin:0;
+  padding:0;
 }
 
-.wrapper{
-    width:100%;
-    height:100%;
+body {
+  color: #333;
+  background-color: #fff;
 }
 
-/* --------------------------------------------------------------------------------------------------- NAV CSS */
+.wrapper {
+  max-width:1200px;
+  margin:0 auto;
+}
+
 nav{
-    background-color:white;
-    display:flex;
-    align-items:center;
-    justify-content:space-between; 
-    padding:10px 80px; 
-    height:80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 
-
-.nav-logo{
-    display:flex;
-    align-items:center;
+.nav-logo img {
+  width: 150px;
 }
 
-.nav-logo img{
-    height:37px; 
+address {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  gap: 10px;
 }
 
-
-address{
-    display:flex;
-    align-items:center;
+.nav-deliver {
+  font-weight: 600;
 }
 
-
-.nav-deliver{
-    font-size:18px;
-    color:rgba(66, 66, 66, 1);
+.nav-map img {
+  width: 20px;
+  height: 20px;
 }
 
-.nav-map{
-    display:flex;
-    padding:3.5px 9px 3.5px 12px; 
+.search_login {
+  display: flex;
+  gap: 15px;
 }
 
-.nav-map img{
-    width:14px;
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+  font-family: 'Poppins', sans-serif;
 }
 
-.addr{
-    font-size:18px;
-    color:rgba(66, 66, 66, 1);
+/* Search Button */
+button.search {
+  background-color: #f7f7f7;
 }
 
-.search_login{
-    display:flex;
-    align-items:center;
-  
+button.search:hover {
+  background-color: #eaeaea;
 }
 
-.search{
-    display:flex;
-    align-items:center;
-    border:none;
-    background-color:white;
-    font-size:18px;
-    font-weight:700;
-    color:rgba(66, 66, 66, 1);
-    margin-right:30px;
+.search_icon {
+  width: 20px;
+  height: 20px;
 }
 
-.login{
-    display:flex;
-    align-items:center;
-    border-radius:8px;
-    padding:14px 24px;
-    border:none;
-    background-color:white;
-    color:rgba(255, 184, 0, 1);
-    font-weight:700;
-    box-shadow:0px 20px 40px 0px rgba(255, 174, 0, 0.29);
+.login {
+  background-color: #333;
+  color: #fff;
 }
 
-.search_icon{
-    width:18px;
-    height:18px;
-    margin-right:8px; 
+.login:hover {
+  background-color: #555;
 }
 
-.user_logo{
-    width:16px;
-    height:18px;
-    margin-right:10px;
+.user_logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
 }
 
-.search_text,.login_text{
-    font-size:18px;
-    display:flex;
-    align-items:center;
+/* Header Section */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  background-color: #fff;
 }
+
+.heading_content {
+  max-width: 50%;
+}
+
+.heading_text_container {
+  margin-bottom: 20px;
+}
+
+.big_heading {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #222;
+}
+
+.small_heading {
+  font-size: 18px;
+  color: #555;
+}
+
+.heading_delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.upper_delivery {
+  display: flex;
+  gap: 20px;
+}
+
+.delivery_btn, .pickup_btn {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #ff6347; /* accent color */
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.delivery_btn:hover, .pickup_btn:hover {
+  background-color: #ff6347;
+  color: #fff;
+}
+
+.delivery_img, .pickup_img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.lower {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.enter_address {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.enter_img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.typing {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.find {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.find:hover {
+  background-color: #ff4b2b;
+}
+
+/* Heading Image */
+.heading_image {
+  max-width: 45%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Deals Container */
+.deals-container {
+  display: flex;
+  gap: 20px;
+  padding: 40px 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.deal-card {
+  min-width: 220px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+
+.deal-card:hover {
+  transform: translateY(-5px);
+}
+
+.deal-image {
+  position: relative;
+}
+
+.deal-image img {
+  width: 100%;
+  display: block;
+}
+
+.discount-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff6347;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.percent {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  align-items: center;
+}
+
+.off {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.deal-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.deal-info h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.days-left {
+  font-size: 14px;
+  color: #777;
+}
+
+/* How It Works Section */
+.working {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.working_title h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #222;
+}
+
+.working_features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.feature-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #222;
+}
+
+.feature-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Featured Restaurants */
+.featured-restaurants {
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.fr-heading {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+}
+
+.upper-res, .lower-res {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.restaurant-card {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 220px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.badge-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.badge-discount, .badge-fast {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.badge-discount:hover, .badge-fast:hover {
+  background-color: #f1f1f1;
+}
+
+.badge-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.res-rating {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #777;
+}
+
+.status-closed, .status-open {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: default;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.status-closed {
+  background-color: #ccc;
+  color: #555;
+}
+
+.status-open {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* View All Button */
+.btn-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ff4b2b;
+}
+
+/* Search by Foods Section */
+.search_by_foods {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.search_heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+}
+
+.view_button button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view_button button:hover {
+  background-color: #ff4b2b;
+}
+
+.food_items ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+
+.food_items li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.food_items img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 8px;
+}
+
+/* Article Sections (Deals & Promotions) */
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.sandwich, .chicken, .pizza {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.sandwich, .chicken, .pizza {
+  flex-direction: row;
+}
+
+.sandwich_text, .chicken_text, .pizza_text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.sandwich_heading_text, .chicken_heading_text, .pizza_heading_text {
+  margin-bottom: 20px;
+}
+
+.black {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+}
+
+.yellow {
+  color: #ff6347;
+}
+
+.bottom_text h3 {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Call to Action Section */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  margin: 40px 0;
+}
+
+.cta img {
+  max-width: 50%;
+  height: auto;
+}
+
+.content {
+  max-width: 50%;
+  padding-left: 40px;
+}
+
+.content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.content .btn {
+  padding: 14px 40px;
+  font-size: 16px;
+  border-radius: 30px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #222;
+  color: #ddd;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.link_newsletter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.columns {
+  min-width: 150px;
+}
+
+.columns h4 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.columns ul {
+  list-style: none;
+}
+
+.columns li {
+  margin-bottom: 8px;
+}
+
+.columns a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.columns a:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.social h4 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.social_media img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.mail h4 {
+  margin-bottom: 10px;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.envelope_img {
+  width: 20px;
+  height: 20px;
+}
+
+.email_text input {
+  border: none;
+  outline: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  width: 200px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.last {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lighter {
+  color: #999;
+  font-size: 14px;
+}
+
+.heavier {
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+

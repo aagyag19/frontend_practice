@@ -627,9 +627,11 @@ header{
 
 
 article {
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 80px; 
     /* margin:100px; */
 

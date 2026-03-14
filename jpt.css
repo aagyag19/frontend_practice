@@ -1,0 +1,242 @@
+* tablet view */
+/* @media (max-width:768px) and (min-width:425px){
+
+    .address{
+       display:none;
+    }
+
+    header{
+    height:30vh; 
+    }
+
+    .heading_image{
+        display:none;
+    }
+
+
+    .deals-container {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .deal-card{
+        width: 20em;
+        margin-bottom: 2%;;
+    }
+    
+
+    .upper-res, .lower-res{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom:6%;
+    }
+
+    .restaurant-card{
+        margin-bottom:6%;
+    }
+
+
+
+    .food_items ul{
+        display: block;
+    }
+
+    .food_items li{
+        margin-bottom: 5%;
+    }
+
+
+    .food_items ul li img{
+        margin-bottom: 1%;
+    }
+
+  
+
+
+    .sandwich, .chicken, .pizza{
+        display:block;
+        padding:0%;
+    }
+
+    .sandwich_image, .chicken_image, .pizza_image{
+        display:none;
+    }
+
+
+    .cta img{
+        height:30vh;
+    }
+
+
+
+    .link_newsletter{
+        display:block;
+
+    }
+
+
+    .links{
+        width:100%;
+        gap:20%;
+        justify-content: center;
+        
+    }
+
+    .columns ul li{
+        display: flex;
+        width:100%;
+
+    }
+
+    .social h4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social_media{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .mail h4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .subscribe{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+ */
+
+
+/* mobile view */
+/* @media (max-width:425px) and (min-width:320px){
+
+    .address{
+       display:none;
+    }
+
+    .heading_image{
+        display:none;
+    } */
+
+    /* .address{
+       display:none;
+    }
+
+    header{
+    height:30vh; 
+    }
+
+    .heading_image{
+        display:none;
+    }
+
+
+    .deals-container {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+    .deal-card{
+        width: 20em;
+        margin-bottom: 2%;;
+    }
+    
+
+    .upper-res, .lower-res{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom:6%;
+    }
+
+    .restaurant-card{
+        margin-bottom:6%;
+    }
+
+
+
+    .food_items ul{
+        display: block;
+    }
+
+    .food_items li{
+        margin-bottom: 5%;
+    }
+
+
+    .food_items ul li img{
+        margin-bottom: 1%;
+    }
+
+  
+
+
+    .sandwich, .chicken, .pizza{
+        display:block;
+        padding:0%;
+    }
+
+    .sandwich_image, .chicken_image, .pizza_image{
+        display:none;
+    }
+
+
+    .cta img{
+        height:30vh;
+    }
+
+
+
+    .link_newsletter{
+        display:block;
+
+    }
+
+
+    .links{
+        width:100%;
+        gap:20%;
+        justify-content: center;
+        
+    }
+
+    .columns ul li{
+        display: flex;
+        width:100%;
+
+    }
+
+    .social h4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .social_media{
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    .mail h4{
+        display: flex;
+        justify-content: center;
+    }
+
+    .subscribe{
+        display: flex;
+        justify-content: center;
+    } */

@@ -660,7 +660,7 @@ article {
 }
 
 .top_text h1{
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 700;
 }
 .black{
@@ -673,7 +673,7 @@ article {
 
 
 .bottom_text h3{
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 400;
     color: rgba(97, 97, 97, 0.69);
 
@@ -767,7 +767,7 @@ article button{
 
 
 footer{
-    height:58vh;
+    /* height:58vh; */
     background-color:rgba(33, 33, 33, 1);
     color:rgba(255, 255, 255, 1);
     padding:2%;
@@ -932,75 +932,175 @@ footer{
 
 
 
-/* tablet view */
-@media (max-width:768px) and (min-width:425px){
 
+
+
+
+/* tablet view */
+@media (min-width:500px) and (max-width:1000px) {
+    body{
+        width:100vw;
+    }
     .address{
        display:none;
     }
 
     header{
-    height:30vh; 
+        margin:5%;
+        display: block;
+        width:fit-content;
+        height: 20vh;
+        position:relative;
+        background-color: white;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .big_heading{
+        color:#f8b628;
+        font-size:2em;
+        
+    }
+
+    .small_heading{
+        font-size:0.8em;
+    }
+
+    .search_login{
+        display: none;
     }
 
     .heading_image{
         display:none;
     }
 
+    .heading_delivery{
+        padding:1% 0 0 1%;
+    }
 
-    .deals-container {
+
+    .enter_address{
+        width:12em;
+        /* margin-right:0 */
+    }
+
+    .typing{
+        font-size:0.7em;
+    }
+
+    .lower{
+        margin-top: 7%;
+        /* display:block; */
         justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-
-    .deal-card{
-        width: 20em;
-        margin-bottom: 2%;;
-    }
-    
-
-    .upper-res, .lower-res{
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom:6%;
-    }
-
-    .restaurant-card{
-        margin-bottom:6%;
-    }
-
-
-
-    .food_items ul{
-        display: block;
-    }
-
-    .food_items li{
+        /* align-items: center; */
         margin-bottom: 5%;
     }
 
 
-    .food_items ul li img{
+    .find{
+        margin-left:0.8em;
+    }
+
+
+    .deals-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2%;
+    }
+
+    .deal-card {
+        width: 20em;
+        margin-bottom: 2%;
+    }
+
+
+    .working_features{
+        padding:0;
+    }
+
+    .feature-card{
+        width:20vw;
+    }
+
+    .upper-res, .lower-res {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 6%;
+    }
+
+    .restaurant-card {
+        width: 45%;
+        margin-bottom: 6%;
+    }
+
+    .featured-restaurants {
+        margin: 2em;
+    }
+
+    .food_items ul {
+        display: flex;
+        flex-wrap: wrap; 
+       }
+
+    .food_items li {
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    .food_items ul li img {
         margin-bottom: 1%;
     }
 
+
+
+    .sandwich, .chicken, .pizza {
+        padding: 0; 
+        height: 16em;
+    }
+
+    .sandwich_image img, .chicken_image img, .pizza_image img{
+        width:16em;
+        height:16em;
+    }
+
+
+    .chicken_image img{
+    width: 14.5em;
+    height: 16em;
+    }
+
+
+
+    .top_text h1{
+        font-size:1.6em;
+    }
+
+    .bottom_text h3{
+        font-size:0.8em;
+    }
+     
+
+    article button{
+        font-size:0.7em;
+        padding:4%;
+    }
+
+
+
+
   
-
-
-    .sandwich, .chicken, .pizza{
-        display:block;
-        padding:0%;
-    }
-
-    .sandwich_image, .chicken_image, .pizza_image{
-        display:none;
-    }
-
-
     .cta img{
-        height:30vh;
+        height:50vh;
+    }
+
+
+    footer{
+        height:100%;
     }
 
 
@@ -1054,32 +1154,106 @@ footer{
 
 
 
-/* mobile view */
-@media (max-width:425px) and (min-width:320px){
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile view */
+@media (max-width:499px) and (min-width:300px){
+
+    body{
+        width:100vw;
+    }
     .address{
        display:none;
     }
 
-    .heading_image{
-        display:none;
-    }
-
-    /* .address{
-       display:none;
-    }
-
     header{
-    height:30vh; 
+        margin:5%;
+        display: block;
+        width:fit-content;
+        height: 20vh;
+        position:relative;
+        background-color: white;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    .big_heading{
+        color:#f8b628;
+        font-size:2em;
+        
+    }
+
+    .small_heading{
+        font-size:0.8em;
+    }
+
+    .search_login{
+        display: none;
     }
 
     .heading_image{
         display:none;
     }
 
+    .heading_delivery{
+        padding:1% 0 0 1%;
+    }
+
+
+    .enter_address{
+        width:12em;
+        /* margin-right:0 */
+    }
+
+    .typing{
+        font-size:0.7em;
+    }
+
+    .lower{
+        margin-top: 7%;
+        /* display:block; */
+        justify-content: center;
+        /* align-items: center; */
+        margin-bottom: 5%;
+    }
+
+
+    .find{
+        margin-left:0.8em;
+    }
+
+    
 
     .deals-container {
+        margin-top:15%;
         justify-content: center;
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
         
@@ -1087,12 +1261,37 @@ footer{
 
     .deal-card{
         width: 20em;
-        margin-bottom: 2%;;
+        margin-bottom: 5%;;
     }
     
 
+    .working{
+        margin-bottom: 0;
+    }
+
+    .working_features{
+        display:flex;
+        flex-wrap: wrap;
+        padding:6%;
+    }
+
+
+    .featured-restaurants{
+        margin-top:0;
+        
+    }
+
+    .featured-restaurants .fr-heading{
+        font-size:1.5em;
+    }
+
+    .image-container .img{
+        width:15em;
+    }
+
     .upper-res, .lower-res{
         flex-wrap: wrap;
+ 
         justify-content: center;
         margin-bottom:6%;
     }
@@ -1101,6 +1300,23 @@ footer{
         margin-bottom:6%;
     }
 
+
+    .featured-restaurants .btn{
+        padding:10%;
+    }
+
+
+    .search_heading h2{
+        font-size:1.5em;
+    }
+
+    .view_button button{
+        background-color:  rgba(255, 179, 14, 1);
+        color:white;
+        border-radius: 8px;
+                padding: 10%;
+                font-size: 0.7em;
+    }
 
 
     .food_items ul{
@@ -1119,9 +1335,23 @@ footer{
   
 
 
+
+    /* .top_text h1{
+        font-size:1.5em;
+    }
+
+    .bottom_text h3{
+        font-size:1.2em;
+    } */
+
+    article button{
+        font-size:0.7em;
+    }
+
     .sandwich, .chicken, .pizza{
         display:block;
         padding:0%;
+        height: fit-content;
     }
 
     .sandwich_image, .chicken_image, .pizza_image{
@@ -1130,9 +1360,17 @@ footer{
 
 
     .cta img{
-        height:30vh;
+        height:35vh;
     }
 
+    .content h2{
+        color: white;
+        font-size: 1.5em;
+    }
+
+    .content .btn{
+        font-size:0.6em;
+    }
 
 
     .link_newsletter{
@@ -1147,6 +1385,9 @@ footer{
         justify-content: center;
         
     }
+    .columns h4{
+        font-size:0.8em;
+    }
 
     .columns ul li{
         display: flex;
@@ -1154,7 +1395,14 @@ footer{
 
     }
 
+
+    .columns ul li a{
+        font-size:0.7em;
+
+    }
+
     .social h4{
+        font-size:0.7em;
         display: flex;
         justify-content: center;
     }
@@ -1164,15 +1412,39 @@ footer{
         justify-content: center;
     }
     
+    .envelope_img{
+        width:3vw;
+    }
+
+        
+    .email_text input{
+
+        font-size:0.7em;
+    }
+
+    .btn{
+        font-size:0.7em;
+    }
 
     .mail h4{
+        font-size:0.6em;
         display: flex;
         justify-content: center;
+    }
+
+
+    .social_media img{
+        width:3vw;
+
     }
 
     .subscribe{
         display: flex;
         justify-content: center;
-    } */
+    }
 
+
+    .bottom{
+        font-size:0.5em;
+    }
 }

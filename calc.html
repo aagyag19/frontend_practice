@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .main{
+            display: flex;
+            margin-top:50px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .btn,.ybtn,.dbtn, .obtn{
+            width:60px;
+            height:60px;
+            font-size:20px;
+            border:none;
+        }
+
+        .btn{
+            background-color: darkgray;
+        }
+
+        .ybtn{
+            background-color: orange;
+        }
+
+        .dbtn{
+            background-color: gray;
+        }
+
+        .obtn{
+            width:120px;
+            height:60px;
+            font-size:20px;
+            background-color: darkgray;
+        }
+
+
+        .box{
+            background-color: gray;
+            color:white;
+            height:60px;
+            justify-content: end;
+            border:none;
+            text-align: right;
+            font-size:20px;
+        } */
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        height:fit-content;
+        align-items: center;
+        flex-direction: column;
+        margin-top:50px;
+        background-color: black;
+        border-radius: 20px;
+        overflow:hidden;
+    }
+
+    .box {
+        background-color: black;
+        border-radius: 20px;
+        color: white;
+        width: 240px; 
+        height: 80px;
+        border: none;
+        text-align: right;
+        font-size: 48px;
+
+    }
+
+    .first-row, .second_row, .third_row, .fourth_row, .fifth_row {
+        display: flex;
+    }
+
+
+    .btn, .ybtn, .dbtn, .obtn {
+        width: 60px;
+        height: 60px;
+        font-size: 20px;
+        border: none;
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .btn {
+        background-color: darkgray;
+        color: white;
+    }
+    .ybtn {
+        background-color: orange;
+        color: white;
+    }
+
+    .dbtn {
+        background-color: gray;
+        color: white;
+    }
+
+    .obtn {
+        width: 120px;
+        background-color:gray;
+        color: white;
+
+    }
+
+</style>
+
+
+</head>
+<body>
+    <div class="main">
+        <div class="field">
+            <input class="box" type="text" id="dis" name="display">
+        </div>
+
+
+        <div class="first-row">
+
+                <button onclick="clr()" class="dbtn">AC</button>
+                <button onclick="toggle()" class="dbtn" >+/-</button>
+                <button onclick="disp('%')" class="dbtn">%</button>
+                <button onclick="disp('/')" class="ybtn">÷</button>
+        </div>
+
+        <div class="second_row">
+                <button onclick="disp('7')" class="btn">7</button>
+                <button onclick="disp('8')" class="btn">8</button>
+                <button onclick="disp('9')" class="btn">9</button>
+                <button onclick="disp('*')" class="ybtn">*</button>
+        </div>
+
+        <div class="third_row">
+
+                <button onclick="disp('4')" class="btn">4</button>
+                <button onclick="disp('5')" class="btn">5</button>
+                <button onclick="disp('6')" class="btn">6</button>
+                <button onclick="disp('-')" class="ybtn">-</button>
+            
+        </div>  
+
+        <div class="fourth_row">
+                <button onclick="disp('1')" class="btn">1</button>
+                <button onclick="disp('2')" class="btn">2</button>
+                <button onclick="disp('3')" class="btn">3</button>
+                <button onclick="disp('+')" class="ybtn">+</button>
+
+        </div>
+
+
+        <div class="fifth_row">
+                <button onclick="disp('0')" class="obtn">0</button>
+                <button onclick="disp('.')" class="btn">.</button>
+                <button onclick="calc()" class="ybtn">=</button>
+        </div>
+
+    </div>
+
+    <script>
+        function disp(val){
+            document.getElementById("dis").value+=val;
+        }
+
+        function calc(){
+            let data=document.getElementById("dis").value;
+            let res=eval(data);
+            document.getElementById("dis").value=res;
+        }
+
+        function clr(){
+            document.getElementById("dis").value='';
+        }
+
+        function toggle(){
+            let n =document.getElementById("dis").value;
+            let newN=n*-1;
+            document.getElementById("dis").value=newN;
+        }
+    </script>
+</body>
+</html>
